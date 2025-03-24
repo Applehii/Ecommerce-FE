@@ -1,26 +1,34 @@
-'use client'
-import Link from 'next/link';
-import { Button, Form } from 'react-bootstrap';
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import { useState } from 'react';
-import 'bootstrap-icons/font/bootstrap-icons.css'
+"use client";
+import Link from "next/link";
+import { Button, Form } from "react-bootstrap";
+import Container from "react-bootstrap/Container";
+import Nav from "react-bootstrap/Nav";
+import Navbar from "react-bootstrap/Navbar";
+import { useState } from "react";
+import "bootstrap-icons/font/bootstrap-icons.css";
 
-const Menu = ()=> {
+const Menu = () => {
   const [showSearch, setShowSearch] = useState(false);
 
   return (
     <Navbar expand="lg" className="bg-body-tertiary">
       <Container>
-        <Navbar.Brand href="#home">Ecommerce</Navbar.Brand>
+        <Navbar.Brand href="/">Ecommerce</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Link className='nav-link' href="#home">Home</Link>
-            <Link className='nav-link' href="#men">Men</Link>
-            <Link className='nav-link' href="#women">Women</Link>
-            <Link className='nav-link' href="#accesories">Accesories</Link>
+            <Link className="nav-link" href="/">
+              Home
+            </Link>
+            <Link className="nav-link" href="men">
+              Men
+            </Link>
+            <Link className="nav-link" href="women">
+              Women
+            </Link>
+            <Link className="nav-link" href="accesories">
+              Accesories
+            </Link>
           </Nav>
           <div className="d-flex gap-2 align-items-center">
             {showSearch ? (
@@ -31,8 +39,8 @@ const Menu = ()=> {
                   className="me-2"
                   autoFocus
                 />
-                <Button 
-                  variant="outline-secondary" 
+                <Button
+                  variant="outline-secondary"
                   onClick={() => setShowSearch(false)}
                   className="p-2"
                 >
@@ -50,6 +58,6 @@ const Menu = ()=> {
       </Container>
     </Navbar>
   );
-}
+};
 
-export default Menu; 
+export default Menu;

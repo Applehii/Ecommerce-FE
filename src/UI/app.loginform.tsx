@@ -1,9 +1,9 @@
-'use client'
-import { useState } from 'react';
-import Button from 'react-bootstrap/Button';
-import Modal from 'react-bootstrap/Modal';
+"use client";
+import { useState } from "react";
+import Button from "react-bootstrap/Button";
+import Modal from "react-bootstrap/Modal";
 
-function Example() {
+const Login = () => {
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
@@ -31,6 +31,6 @@ function Example() {
       </Modal>
     </>
   );
-}
+};
 
-export default Example;
+export default Login;
