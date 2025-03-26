@@ -1,0 +1,68 @@
+/* HeroSection.module.css */
+.hero {
+    position: relative;
+    height: 100vh;
+    overflow: hidden; /* Quan trọng: ngăn tràn content */
+}
+
+.sliderWrapper {
+    height: 100%;
+}
+
+/* Slide container */
+.slideItem {
+    position: relative;
+    height: 100vh;
+    min-height: 600px;
+}
+
+/* Background image layer */
+.slideBackground {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 2  ; /* Lớp nền */
+}
+
+
+/* Content layer */
+.contentWrapper {
+    position: relative;
+    height: 100%;
+    z-index: 3; /* Lớp nội dung trên cùng */
+    display: flex;
+    align-items: center;
+}
+
+.content {
+    color: white;
+    padding: 2rem;
+    max-width: 600px;
+    margin: 0 auto; /* Căn giữa */
+    text-align: center;
+}
+
+/* Các style khác giữ nguyên */
+.subheading {
+    color: #ffa500;
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: 3px;
+}
+
+.btnCustom {
+    background: #ffa500;
+    border: none;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.btnCustom:hover {
+    background: #ff8c00;
+}

@@ -10,6 +10,11 @@ import "bootstrap-icons/font/bootstrap-icons.css";
 const Menu = () => {
   const [showSearch, setShowSearch] = useState(false);
 
+  //handle login
+  const handleLogin = () =>{
+
+  }
+
   return (
     <Navbar expand="lg" className="bg-body-tertiary">
       <Container>
@@ -52,7 +57,7 @@ const Menu = () => {
                 <i className="bi bi-search"></i>
               </Button>
             )}
-            <Button className="px-3">Login</Button>
+            <Button className="px-3" onClick={()=>handleLogin()}>Login</Button>
           </div>
         </Navbar.Collapse>
       </Container>

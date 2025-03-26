@@ -1,11 +1,15 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+'use client'
+import HeroSection from "@/components/HeroSection/HeroSection";
 import Menu from "@/components/Nav";
-import Example from "@/UI/app.loginform";
+import styles from './page.module.css'
+
 
 export default function Home() {
   return (
-   <div>
-    </div>
+      <div className={styles.headerTop}>
+        <Menu />
+        <HeroSection/>
+      </div>
+
   );
 }
