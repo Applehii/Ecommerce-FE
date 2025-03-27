@@ -1,8 +1,9 @@
 /* HeroSection.module.css */
 .hero {
     position: relative;
-    height: 100vh;
-    overflow: hidden; /* Quan trọng: ngăn tràn content */
+    height: 80vh;
+    overflow: hidden;
+    margin: 20px 0;
 }
 
 .sliderWrapper {
@@ -12,47 +13,55 @@
 /* Slide container */
 .slideItem {
     position: relative;
-    height: 100vh;
-    min-height: 600px;
+    height: 80vh;
+    min-height: 500px;
+    display: flex;
+    align-items: center;
 }
 
 /* Background image layer */
 .slideBackground {
     position: absolute;
     top: 0;
-    left: 0;
-    width: 100%;
+    right: 0;
+    width: 50%;
     height: 100%;
-    background-size: cover;
-    background-position: center;
+    background-size: contain;
+    background-position: right center;
     background-repeat: no-repeat;
-    z-index: 2  ; /* Lớp nền */
+    z-index: 2;
 }
-
 
 /* Content layer */
 .contentWrapper {
     position: relative;
     height: 100%;
-    z-index: 3; /* Lớp nội dung trên cùng */
+    z-index: 3;
     display: flex;
     align-items: center;
+    padding: 0 20px;
+    width: 50%;
 }
 
 .content {
-    color: white;
+    color: #333;
     padding: 2rem;
     max-width: 600px;
-    margin: 0 auto; /* Căn giữa */
-    text-align: center;
+    margin: 0;
+    text-align: left;
 }
 
 /* Các style khác giữ nguyên */
 .subheading {
-    color: #ffa500;
+    color: white;
     font-size: 1.2rem;
-    font-weight: 600;
-    letter-spacing: 3px;
+    font-weight: 300;
+    letter-spacing: 4px;
+    background-color: black;
+    font-family: "Open Sans";
+    padding: 2px, 5px;
+    display: inline-block;
+    text-align: center;
 }
 
 .btnCustom {
@@ -65,4 +74,31 @@
 
 .btnCustom:hover {
     background: #ff8c00;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .hero {
+        height: 60vh;
+    }
+    
+    .slideItem {
+        height: 60vh;
+        min-height: 400px;
+        flex-direction: column;
+    }
+
+    .slideBackground {
+        width: 100%;
+        background-position: center;
+    }
+
+    .contentWrapper {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .content {
+        text-align: center;
+    }
 }

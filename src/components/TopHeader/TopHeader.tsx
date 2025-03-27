@@ -7,7 +7,7 @@ import Navbar from "react-bootstrap/Navbar";
 import { useState } from "react";
 import "bootstrap-icons/font/bootstrap-icons.css";
 
-const Menu = () => {
+const TopHeader = () => {
   const [showSearch, setShowSearch] = useState(false);
 
   //handle login
@@ -16,7 +16,7 @@ const Menu = () => {
   }
 
   return (
-    <Navbar expand="lg" className="bg-body-tertiary">
+    <Navbar expand="lg" className="bg-transparent">
       <Container>
         <Navbar.Brand href="/">Ecommerce</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -34,29 +34,17 @@ const Menu = () => {
             <Link className="nav-link" href="accesories">
               Accesories
             </Link>
+            <Link className="nav-link" href="about">
+              About
+            </Link>
+            <Link className="nav-link" href="contact">
+              Contact
+            </Link>
+            <Link className="nav-link" href="blog">
+              Blogs
+            </Link>
           </Nav>
           <div className="d-flex gap-2 align-items-center">
-            {showSearch ? (
-              <div className="d-flex align-items-center">
-                <Form.Control
-                  type="search"
-                  placeholder="Search..."
-                  className="me-2"
-                  autoFocus
-                />
-                <Button
-                  variant="outline-secondary"
-                  onClick={() => setShowSearch(false)}
-                  className="p-2"
-                >
-                  <i className="bi bi-x"></i>
-                </Button>
-              </div>
-            ) : (
-              <Button onClick={() => setShowSearch(true)}>
-                <i className="bi bi-search"></i>
-              </Button>
-            )}
             <Button className="px-3" onClick={()=>handleLogin()}>Login</Button>
           </div>
         </Navbar.Collapse>
@@ -65,4 +53,4 @@ const Menu = () => {
   );
 };
 
-export default Menu;
+export default TopHeader;

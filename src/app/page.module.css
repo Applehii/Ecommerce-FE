@@ -1,4 +1,4 @@
-  .page {
+.page {
   --gray-rgb: 0, 0, 0;
   --gray-alpha-200: rgba(var(--gray-rgb), 0.08);
   --gray-alpha-100: rgba(var(--gray-rgb), 0.05);
@@ -79,10 +79,6 @@
   font-size: 16px;
   line-height: 20px;
   font-weight: 500;
-}
-.header-top{
-  background-color: #DBCC8F !important;
-  z-index: 1;
 }
 
 a.primary {
@@ -169,4 +165,11 @@ a.secondary {
   .logo {
     filter: invert();
   }
+}
+
+.yellowBackground {
+  background-color: #DBCC8F;
+  width: 100%;
+  min-height: 100vh;
+  padding: 20px 0;
 }

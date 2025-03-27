@@ -1,0 +1,64 @@
+.ftcoFooter {
+    background-color: #000;
+    color: #fff;
+    padding: 40px 0;
+}
+
+.ftcoHeading2 {
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.ftcoFooter p {
+    color: #999;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.navLink {
+    color: #999 !important;
+    font-size: 14px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.navLink:hover {
+    color: #ffa500 !important;
+}
+
+.contactItem {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    color: #999;
+    font-size: 14px;
+}
+
+.icon {
+    margin-right: 15px;
+    font-size: 16px;
+    color: #ffa500;
+}
+
+.contactItem span {
+    flex: 1;
+}
+
+.social {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.socialIcon {
+    font-size: 20px;
+    color: #999;
+    transition: color 0.3s ease;
+    cursor: pointer;
+}
+
+.socialIcon:hover {
+    color: #ffa500;
+} 
