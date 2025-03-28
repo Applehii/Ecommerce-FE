@@ -1,32 +1,56 @@
-'use client'
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faPhone, faEnvelope} from "@fortawesome/free-solid-svg-icons";
-import styles from './Header.module.css';
+"use client";
+import Link from "next/link";
+import { Button, Form } from "react-bootstrap";
+import Container from "react-bootstrap/Container";
+import Nav from "react-bootstrap/Nav";
+import Navbar from "react-bootstrap/Navbar";
+import { useState } from "react";
+import "bootstrap-icons/font/bootstrap-icons.css";
 
-const Header = () =>{
-    return (
-        <div className={styles.header}>
-            <div className="container">
-                <div className="row no-gutters d-flex align-items-start align-items-center px-md-0">
-                    <div className="col-lg-12 d-block">
-                        <div className="row d-flex">
-                            <div className="col-md pr-4 d-flex topper align-items-center">
-                                <div className="me-2 mr-2 d-flex justify-content-center align-items-center">
-                                    <FontAwesomeIcon icon={faPhone} className={styles.icon}/></div>
-                                <span className="d-flex text-uppercase">+84 332711069</span>
-                            </div>
-                            <div className="col-md pr-4 d-flex topper align-items-center">
-                                <div className="me-2 mr-2 d-flex justify-content-center align-items-center"><FontAwesomeIcon icon={faEnvelope} className={styles.icon} /></div>
-                                <span className="text-uppercase">qlv2810@email.com</span>
-                            </div>
-                            <div className="col-md-5 pr-4 d-flex topper align-items-center text-lg-right">
-                                <span className="text-uppercase">3-5 Business days delivery &amp; Free Returns</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    )
+const Header = () => {
+  const [showSearch, setShowSearch] = useState(false);
+
+  //handle login
+  const handleLogin = () =>{
+
+  }
+
+  return (
+    <Navbar expand="lg" className="bg-transparent">
+      <Container>
+        <Navbar.Brand href="/">Ecommerce</Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="me-auto">
+            <Link className="nav-link" href="/">
+              Home
+            </Link>
+            <Link className="nav-link" href="men">
+              Men
+            </Link>
+            <Link className="nav-link" href="women">
+              Women
+            </Link>
+            <Link className="nav-link" href="accesories">
+              Accesories
+            </Link>
+            <Link className="nav-link" href="about">
+              About
+            </Link>
+            <Link className="nav-link" href="contact">
+              Contact
+            </Link>
+            <Link className="nav-link" href="blog">
+              Blogs
+            </Link>
+          </Nav>
+          <div className="d-flex gap-2 align-items-center">
+            <Button className="px-3" onClick={()=>handleLogin()}>Login</Button>
+          </div>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
+  );
 };
+
 export default Header;

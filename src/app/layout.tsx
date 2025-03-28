@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Footer from "@/components/Footer/Footer";
-import Header from "@/components/Header/Header";
+import TopHeader from "@/components/TopHeader/TopHeader";
 
 export const metadata: Metadata = {
   title: "Ecommerce",
@@ -16,7 +16,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="bootstrap">
-        <Header />
+        <TopHeader />
         <main>{children}</main>
         <Footer/>
       </body>

@@ -1,0 +1,42 @@
+.backgroundMen {
+    background-image: url('/assets/hightlight-men.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 700px;
+    display: flex;
+    align-items: flex-end;
+  }
+  .backgroundWomen {
+    background-image: url('/assets/hightlight-women.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 350px;
+    display: flex !important;
+    justify-content: flex-end !important;
+    align-self: stretch !important;
+    font-size: 15px;
+    line-height: 1.8;
+    font-weight: 400;
+    color: gray;
+    box-sizing: border-box;
+    text-align: left;
+    font-family: "Open Sans", Arial, sans-serif;
+  }
+  
+  .backgroundBestSeller {
+    background-image: url('/assets/hightlight-bestseller.png');
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+  }
+
+  .button{
+    border-radius: 30px !important;
+    background:black;
+    color: white;
+    font-size: 12px;
+    cursor: pointer;
+  }
+  
