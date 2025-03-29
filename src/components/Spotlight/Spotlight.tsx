@@ -1,8 +1,8 @@
 'use client'
-import styles from './Highlight.module.css'
+import styles from './Spotlightlight.module.css'
 import { Button, NavLink } from 'react-bootstrap';
 
-const Hightlight = () =>{
+const Spotlight = () =>{
     return(
     	<div className="container">
 				<div className="row no-gutters">
@@ -60,4 +60,4 @@ const Hightlight = () =>{
     	</div>
     )
 }
-export default Hightlight;
+export default Spotlight;
