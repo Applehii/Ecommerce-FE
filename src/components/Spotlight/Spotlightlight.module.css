@@ -3,7 +3,7 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 700px;
+    height: 100%;
     display: flex;
     align-items: flex-end;
   }
@@ -30,7 +30,10 @@
     background-size: cover;
     background-position: center;
     height: 400px;
-  }
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    }
 
   .button{
     border-radius: 30px !important;
@@ -39,4 +42,3 @@
     font-size: 12px;
     cursor: pointer;
   }
-  

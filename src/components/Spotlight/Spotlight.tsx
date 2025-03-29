@@ -17,8 +17,7 @@ const Spotlight = () =>{
     				</div>
 					</div>
 					<div className="col-lg-8 p-0">
-    				<div className="row no-gutters choose-wrap divider-two align-items-stretch">
-    					<div className="col-md-12">
+    					<div className="col-md-12 ">
 	    					<div className={styles.backgroundWomen}>
 	    						<div className="col-md-7 d-flex align-items-center">
 	    							<div className="text text-white px-5">
@@ -30,9 +29,9 @@ const Spotlight = () =>{
 	    						</div>
 	    					</div>
 	    				</div>
-    					<div className="col-md-12">
-    						<div className="row no-gutters">
-    							<div className="col-md-6 ">
+    					<div className="col-md-12 d-flex justify-content-center">
+    						<div className="row w-100">
+    							<div className="col-md-6 d-flex align-items-center  p-0">
 		    						<div className="choose-wrap wrap img align-self-stretch bg-light d-flex align-items-center">
 		    							<div className="text text-center">
 		    								<span className="subheading">Summer Sale</span>
@@ -42,7 +41,7 @@ const Spotlight = () =>{
 				    					</div>
 		    						</div>
 	    						</div>
-	    						<div className="col-md-6">
+	    						<div className="col-md-6 d-flex align-items-center p-0">
 		    						<div className={styles.backgroundBestSeller}>
 		    							<div className="text text-center text-white px-5">
 		    								<span className="subheading">Shoes</span>
@@ -54,7 +53,6 @@ const Spotlight = () =>{
 	    						</div>
 	    					</div>
     					</div>
-    				</div>
     			</div>
   			</div>
     	</div>
