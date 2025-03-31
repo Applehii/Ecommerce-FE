@@ -1,3 +1,65 @@
 .deal{
     background: #DBCC8F;
+    padding: 60px 0;
+}
+
+.time {
+   display: flex;
+   margin-bottom: 4;
+   color: #fff;
+   width: 100%;
+}
+.child{
+    width: 25%;
+    font-size: 38px;
+    font-weight: 700;
+    color:#fff;
+}
+
+.unit{
+    color: #fff;
+    font-size: 12px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    width: 25%;
+}
+
+.heading {
+    color: #fff;
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.subheading{
+    font-size: 12px;
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #fff;
+}
+
+.image{
+    flex: 0 0 auto;
+    width: 50%; 
+    background-image: url('/assets/deal.png');
+     background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.product{
+    color: black;
+    font-weight: 800;
+}
+.price{
+    text-decoration: line-through;
+    margin-right: 0.5rem;
+    font-weight: 800;
+    font-size: 24px;
+}
+.saleprice{
+    color: #fff;
+    font-weight: 800;
+    font-size: 24px;
 }
