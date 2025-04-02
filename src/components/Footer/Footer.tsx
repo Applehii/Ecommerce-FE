@@ -24,9 +24,9 @@ const Footer = () => {
                                 Consonantia.</p>
                         </div>
                         <div className={styles.social}>
-                            <FontAwesomeIcon icon={faFacebook} className={styles.socialIcon}/>
-                            <FontAwesomeIcon icon={faYoutube} className={styles.socialIcon}/>
-                            <FontAwesomeIcon icon={faInstagram} className={styles.socialIcon}/>
+                            <NavLink href="https://www.facebook.com/quan.le.8281" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faFacebook} className={styles.socialIcon}/></NavLink>
+                            <NavLink href="https://www.youtube.com/channel/UCMHXOwm_XISdE6PIKyYIC-w" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faYoutube} className={styles.socialIcon}/></NavLink>
+                            <NavLink href="https://www.instagram.com/lequan802/" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faInstagram} className={styles.socialIcon}/></NavLink>
                         </div>
                     </div>
                     <div className="col-md-3">

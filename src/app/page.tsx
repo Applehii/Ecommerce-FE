@@ -5,6 +5,7 @@ import General from "@/components/General/General";
 import NewArrival from "@/components/NewArrival/NewArrival";
 import Spotlight from "@/components/Spotlight/Spotlight";
 import Deal from "@/components/Deal/Deal";
+import Review from "@/components/Review/Review";
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
     <NewArrival />
     <Spotlight />
     <Deal />
+    <Review />
     </>
   );
 }
